@@ -1,3 +1,3 @@
 # Plan Impulso Android
 
-Project for "Plan Impulso Android" training
+Project for my "Plan Impulso Android" training
