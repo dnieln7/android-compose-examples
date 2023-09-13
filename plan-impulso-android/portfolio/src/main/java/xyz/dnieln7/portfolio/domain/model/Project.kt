@@ -1,0 +1,26 @@
+package xyz.dnieln7.portfolio.domain.model
+
+data class Project(
+    val id: Int,
+    val name: String,
+    val ownership: String,
+    val summary: String,
+    val year: Int,
+    val importance: Double,
+    val thumbnail: String,
+    val images: List<String>,
+    val tags: List<String>,
+    val duration: String,
+    val description: String,
+    val features: List<String>,
+    val technologies: List<String>,
+    val androidGit: String,
+    val androidUrl: String,
+    val webUrl: String,
+    val webGit: String,
+    val programUrl: String,
+    val programGit: String,
+    val createdAt: String,
+    val updatedAt: String,
+    val deletedAt: Long,
+)

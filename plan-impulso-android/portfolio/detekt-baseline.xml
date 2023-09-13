@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>LongMethod:ProjectsScreen.kt$@OptIn(ExperimentalMaterialApi::class) @Composable fun ProjectsScreen( authViewModel: AuthViewModel = hiltViewModel(), projectsViewModel: ProjectsViewModel = hiltViewModel(), navigateToProjectDetail: (Int) -&gt; Unit, )</ID>
+    <ID>LongParameterList:ProjectsScreen.kt$( modifier: Modifier, projects: List&lt;Project&gt;, onRefresh: () -&gt; Unit, navigateToProjectDetail: (Int) -&gt; Unit, useSwipeGridTiles: Boolean, onDelete: (Project) -&gt; Unit, )</ID>
+    <ID>MagicNumber:PortfolioApiServiceStatus.kt$PortfolioApiServiceStatus.NOT_AUTHENTICATED$401</ID>
+  </CurrentIssues>
+</SmellBaseline>

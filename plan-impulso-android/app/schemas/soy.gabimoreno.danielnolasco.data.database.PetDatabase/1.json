@@ -1,0 +1,172 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "fabc34dc34b0468c2babfe875fb9d819",
+    "entities": [
+      {
+        "tableName": "tb_dogs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, `barking` INTEGER NOT NULL, `coatLength` INTEGER NOT NULL, `drooling` INTEGER NOT NULL, `energy` INTEGER NOT NULL, `goodWithChildren` INTEGER NOT NULL, `goodWithOtherDogs` INTEGER NOT NULL, `goodWithStrangers` INTEGER NOT NULL, `grooming` INTEGER NOT NULL, `imageLink` TEXT NOT NULL, `maxHeightFemale` REAL NOT NULL, `maxHeightMale` REAL NOT NULL, `maxLifeExpectancy` REAL NOT NULL, `maxWeightFemale` REAL NOT NULL, `maxWeightMale` REAL NOT NULL, `minHeightFemale` REAL NOT NULL, `minHeightMale` REAL NOT NULL, `minLifeExpectancy` REAL NOT NULL, `minWeightFemale` REAL NOT NULL, `minWeightMale` REAL NOT NULL, `playfulness` INTEGER NOT NULL, `protectiveness` INTEGER NOT NULL, `shedding` INTEGER NOT NULL, `trainability` INTEGER NOT NULL, PRIMARY KEY(`name`))",
+        "fields": [
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "barking",
+            "columnName": "barking",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coatLength",
+            "columnName": "coatLength",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "drooling",
+            "columnName": "drooling",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "energy",
+            "columnName": "energy",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "goodWithChildren",
+            "columnName": "goodWithChildren",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "goodWithOtherDogs",
+            "columnName": "goodWithOtherDogs",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "goodWithStrangers",
+            "columnName": "goodWithStrangers",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grooming",
+            "columnName": "grooming",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageLink",
+            "columnName": "imageLink",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxHeightFemale",
+            "columnName": "maxHeightFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxHeightMale",
+            "columnName": "maxHeightMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxLifeExpectancy",
+            "columnName": "maxLifeExpectancy",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxWeightFemale",
+            "columnName": "maxWeightFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxWeightMale",
+            "columnName": "maxWeightMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minHeightFemale",
+            "columnName": "minHeightFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minHeightMale",
+            "columnName": "minHeightMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minLifeExpectancy",
+            "columnName": "minLifeExpectancy",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minWeightFemale",
+            "columnName": "minWeightFemale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "minWeightMale",
+            "columnName": "minWeightMale",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playfulness",
+            "columnName": "playfulness",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "protectiveness",
+            "columnName": "protectiveness",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shedding",
+            "columnName": "shedding",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trainability",
+            "columnName": "trainability",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "name"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fabc34dc34b0468c2babfe875fb9d819')"
+    ]
+  }
+}

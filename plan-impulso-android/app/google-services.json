@@ -1,0 +1,214 @@
+{
+  "project_info": {
+    "project_number": "874530094506",
+    "firebase_url": "https://plan-impulso-android-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "plan-impulso-android",
+    "storage_bucket": "plan-impulso-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:78bc4d0d021c70b875bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.andrescarrasco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:a098ffd1e754a12575bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.armandoquispe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:57c62d0c84f0994275bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.danielnolasco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:f93939fdbc8785b575bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.daviddelapuente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:f9a811c4bc29bc0675bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.marsalastals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:c1e95bb5a86787c275bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.olegariolopez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874530094506:android:348735d0e11e9bec75bfd3",
+        "android_client_info": {
+          "package_name": "soy.gabimoreno.pablogalvan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGRRyeRX0kju5xElAbRwuJ97lLvDrJuco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874530094506-3hs873l7mjdmtfgph8k179t24b5h5elb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

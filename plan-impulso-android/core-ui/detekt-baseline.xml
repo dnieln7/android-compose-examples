@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues />
+  <CurrentIssues>
+    <ID>UnusedPrivateMember:FullScreenCircularProgress.kt$@Preview(showBackground = true) @Composable private fun FullScreenCircularProgressPreview()</ID>
+    <ID>UnusedPrivateMember:FullScreenError.kt$@Preview(showBackground = true) @Composable private fun FullScreenErrorPreview()</ID>
+  </CurrentIssues>
+</SmellBaseline>

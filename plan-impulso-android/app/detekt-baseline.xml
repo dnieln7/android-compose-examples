@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+    <ManuallySuppressedIssues></ManuallySuppressedIssues>
+    <CurrentIssues>
+        <ID>MagicNumber:CatDetailScreen.kt$100f</ID>
+        <ID>MagicNumber:CatDetailScreen.kt$500f</ID>
+        <ID>MagicNumber:Color.kt$0xFF03DAC5</ID>
+        <ID>MagicNumber:Color.kt$0xFF3700B3</ID>
+        <ID>MagicNumber:Color.kt$0xFF6200EE</ID>
+        <ID>MagicNumber:Color.kt$0xFFBB86FC</ID>
+        <ID>MagicNumber:ListTileCat.kt$3</ID>
+        <ID>MagicNumber:ListTileCat.kt$5</ID>
+        <ID>TooGenericExceptionThrown:CatDetailScreen.kt$throw Exception("Not found")</ID>
+        <ID>UnnecessaryAbstractClass:NavDestination.kt$NavDestination$NavDestination</ID>
+        <ID>MagicNumber:DogApiService.kt$DogApiServiceCode.NOT_AUTHENTICATED$400</ID>
+        <ID>LongMethod:MainNavHost.kt$@Composable fun MainNavHost( modifier: Modifier = Modifier, navController: NavHostController = rememberNavController(), startDestination: String = CatListNavDestination.rawRoute )</ID>
+    </CurrentIssues>
+</SmellBaseline>
