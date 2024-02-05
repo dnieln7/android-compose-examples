@@ -60,17 +60,26 @@ fun ScaleLegacy(
                             y = circleCenter.x - it.x,
                             x = circleCenter.y - it.y,
                         ) * (180F / PI).toFloat()
+
+                        println("dragStartedAngle: $dragStartedAngle")
                     },
                     onDragEnd = {
                         oldAngle = currentAngle
+                        println("oldAngle: $oldAngle")
                     },
                     onDrag = { change, dragAmount ->
+                        println("dragAmount: $dragAmount")
+
                         val endAngle = -atan2(
                             y = circleCenter.x - change.position.x,
                             x = circleCenter.y - change.position.y,
                         ) * (180F / PI).toFloat()
 
+                        println("endAngle: $endAngle")
+
                         val newAngle = oldAngle + (endAngle - dragStartedAngle)
+
+                        println("newAngle: $newAngle")
 
                         // Check if the new angle is between min and max, if less than min
                         // will return min, if more than max will return max
