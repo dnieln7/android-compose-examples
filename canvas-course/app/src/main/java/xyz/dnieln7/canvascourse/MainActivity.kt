@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import xyz.dnieln7.canvascourse.common.composable.custom.weightpicker.WeightPicker
 import xyz.dnieln7.canvascourse.common.composable.theme.CVTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +18,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    WeightPicker()
+
                 }
             }
         }
