@@ -21,10 +21,6 @@ import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
 
-typealias NativeColor = android.graphics.Color
-typealias NativePaint = android.graphics.Paint
-typealias NativeSPaintStyle = android.graphics.Paint.Style
-
 @Composable
 fun Clock(modifier: Modifier = Modifier, radius: Dp = 100.dp) {
     var now by remember { mutableLongStateOf(0) }
