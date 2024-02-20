@@ -5,3 +5,4 @@ typealias NativePaint = android.graphics.Paint
 typealias NativeSPaintStyle = android.graphics.Paint.Style
 typealias NativePath = android.graphics.Path
 typealias NativePathMeasure = android.graphics.PathMeasure
+typealias NativePaintAlign = android.graphics.Paint.Align
