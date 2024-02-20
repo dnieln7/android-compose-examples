@@ -15,7 +15,7 @@ import androidx.compose.ui.graphics.drawscope.scale
 import androidx.compose.ui.graphics.drawscope.translate
 
 @Composable
-fun TransformationsAndClipping() {
+fun PathTransformationsAndClipping() {
     Canvas(modifier = Modifier.fillMaxSize()) {
         rotate(
             degrees = 45F,
