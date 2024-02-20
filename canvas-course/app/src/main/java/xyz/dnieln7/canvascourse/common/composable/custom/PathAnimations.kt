@@ -14,8 +14,6 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.PathMeasure
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeJoin
-import androidx.compose.ui.graphics.asAndroidPath
-import androidx.compose.ui.graphics.asComposePath
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.rotate
 import kotlin.math.PI
@@ -67,30 +65,51 @@ fun PathAnimations() {
         )
     }
 
-    val animatedArrow = NativePath()
-    val positions = FloatArray(2) // Position of the ending part of the path
-    val tangents = FloatArray(2) // Tangent of the ending part of the path
+    // val animatedArrow = NativePath()
+    // val positions = FloatArray(2) // Position of the ending part of the path
+    // val tangents = FloatArray(2) // Tangent of the ending part of the path
 
-    NativePathMeasure().apply {
+    val animatedArrow = Path()
+    val position: Offset // Position of the ending part of the path
+    val tangent: Offset // Tangent of the ending part of the path
+
+    PathMeasure().apply {
         setPath(
-            /* path = */ arrow.asAndroidPath(),
-            /* forceClosed = */ false,
+            path = arrow,
+            forceClosed = false,
         )
 
         getSegment(
-            /* startD = */ 0F,
-            /* stopD = */ pathLengthPercentage.value * length,
-            /* dst = */ animatedArrow,
-            /* startWithMoveTo = */ true,
+            startDistance = 0F,
+            stopDistance = pathLengthPercentage.value * length,
+            destination = animatedArrow,
+            startWithMoveTo = true,
         )
 
-        // Get position and tangent of a given path
-        getPosTan(
-            /* distance = */ pathLengthPercentage.value * length,
-            /* pos = */ positions, // Result of the position
-            /* tan = */ tangents, // Result of the tangent values
-        )
+        position = getPosition(pathLengthPercentage.value * length)
+        tangent = getTangent(pathLengthPercentage.value * length)
     }
+
+//    NativePathMeasure().apply {
+//        setPath(
+//            /* path = */ arrow.asAndroidPath(),
+//            /* forceClosed = */ false,
+//        )
+//
+//        getSegment(
+//            /* startD = */ 0F,
+//            /* stopD = */ pathLengthPercentage.value * length,
+//            /* dst = */ animatedArrow,
+//            /* startWithMoveTo = */ true,
+//        )
+//
+//        // Get position and tangent of a given path
+//        getPosTan(
+//            /* distance = */ pathLengthPercentage.value * length,
+//            /* pos = */ positions, // Result of the position
+//            /* tan = */ tangents, // Result of the tangent values
+//        )
+//    }
 
     Canvas(modifier = Modifier.fillMaxSize()) {
         drawPath(
@@ -102,42 +121,81 @@ fun PathAnimations() {
                 join = StrokeJoin.Round,
             )
         )
+
         drawPath(
-            path = animatedArrow.asComposePath(),
-            color = Color.LightGray,
+            path = animatedArrow,
+            color = Color.Magenta,
             style = Stroke(
                 width = 20F,
             )
         )
 
-        val degrees = -atan2(y = tangents[0], x = tangents[1]) * (180F / PI)
+        val degrees = -atan2(tangent.x, tangent.y) * (180F / PI)
 
         rotate(
             degrees = degrees.toFloat() - 180F,
-            pivot = Offset(positions[0], positions[1])
+            pivot = position
         ) {
             drawPath(
                 path = Path().apply {
                     // Move to the top part of the triangle
                     moveTo(
-                        x = positions[0],
-                        y = positions[1] - 30F,
+                        x = position.x,
+                        y = position.y - 30F,
                     )
                     // Move to the bottom left part of the triangle
                     lineTo(
-                        x = positions[0] - 30F,
-                        y = positions[1] + 60F
+                        x = position.x - 30F,
+                        y = position.y + 60F
                     )
                     // Move to the bottom right part of the triangle
                     lineTo(
-                        x = positions[0] + 30F,
-                        y = positions[1] + 60F,
+                        x = position.x + 30F,
+                        y = position.y + 60F,
                     )
                     // Close and connect the bottom right part with the top part of the triangle
                     close()
                 },
-                color = Color.Gray,
+                color = Color.Black,
             )
         }
+
+//        drawPath(
+//            path = animatedArrow.asComposePath(),
+//            color = Color.LightGray,
+//            style = Stroke(
+//                width = 20F,
+//            )
+//        )
+//
+//        val degrees = -atan2(y = tangents[0], x = tangents[1]) * (180F / PI)
+//
+//        rotate(
+//            degrees = degrees.toFloat() - 180F,
+//            pivot = Offset(positions[0], positions[1])
+//        ) {
+//            drawPath(
+//                path = Path().apply {
+//                    // Move to the top part of the triangle
+//                    moveTo(
+//                        x = positions[0],
+//                        y = positions[1] - 30F,
+//                    )
+//                    // Move to the bottom left part of the triangle
+//                    lineTo(
+//                        x = positions[0] - 30F,
+//                        y = positions[1] + 60F
+//                    )
+//                    // Move to the bottom right part of the triangle
+//                    lineTo(
+//                        x = positions[0] + 30F,
+//                        y = positions[1] + 60F,
+//                    )
+//                    // Close and connect the bottom right part with the top part of the triangle
+//                    close()
+//                },
+//                color = Color.Gray,
+//            )
+//        }
     }
 }
