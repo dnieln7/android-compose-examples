@@ -42,9 +42,8 @@ fun Clock(modifier: Modifier = Modifier, radius: Dp = 100.dp) {
     }
 
     Canvas(
-        modifier = Modifier
+        modifier = modifier
             .size(radius * 2)
-            .then(modifier)
     ) {
         val radiusPx = radius.toPx()
 
