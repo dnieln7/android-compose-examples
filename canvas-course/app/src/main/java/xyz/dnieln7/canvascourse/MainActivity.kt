@@ -28,7 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import xyz.dnieln7.canvascourse.common.composable.custom.Clock
+import xyz.dnieln7.canvascourse.common.composable.custom.likeselector.ReactionSelector
 import xyz.dnieln7.canvascourse.common.composable.theme.CVTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,10 +37,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             CVTheme(darkTheme = false, dynamicColor = false) {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
                 ) {
-
+                    Content()
                 }
             }
         }
@@ -63,7 +62,10 @@ fun Content() {
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Box(modifier = Modifier.padding(20.dp)) {
-                Clock(radius = 200.dp)
+                ReactionSelector(
+                    modifier = Modifier.background(MaterialTheme.colorScheme.primaryContainer),
+                    reactionSize = 96.dp,
+                )
             }
             Spacer(modifier = Modifier.height(20.dp))
             Row(
@@ -82,8 +84,7 @@ fun Content() {
                     .padding(10.dp),
             ) {
                 Icon(
-                    imageVector = Icons.Outlined.Settings,
-                    contentDescription = null
+                    imageVector = Icons.Outlined.Settings, contentDescription = null
                 )
                 Spacer(modifier = Modifier.width(10.dp))
                 Text(text = "Settings")
