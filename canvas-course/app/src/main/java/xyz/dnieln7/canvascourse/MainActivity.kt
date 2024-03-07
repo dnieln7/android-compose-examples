@@ -28,7 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import xyz.dnieln7.canvascourse.common.composable.custom.likeselector.ReactionSelector
+import xyz.dnieln7.canvascourse.common.composable.custom.ImageReveal
 import xyz.dnieln7.canvascourse.common.composable.theme.CVTheme
 
 class MainActivity : ComponentActivity() {
@@ -61,10 +61,10 @@ fun Content() {
                 .align(Alignment.BottomCenter),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Box(modifier = Modifier.padding(20.dp)) {
-                ReactionSelector(
-                    modifier = Modifier.background(MaterialTheme.colorScheme.primaryContainer),
-                    reactionSize = 96.dp,
+            Box(modifier = Modifier.padding(0.dp)) {
+                ImageReveal(
+                    modifier = Modifier.fillMaxWidth(),
+                    coverColor = MaterialTheme.colorScheme.primaryContainer
                 )
             }
             Spacer(modifier = Modifier.height(20.dp))
